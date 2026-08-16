@@ -37,3 +37,18 @@ def concatenar_lue(lista, comeco_a, comeco_b)
 
   comeco_a
 end
+
+novo_comeco = concatenar_lue(lista, comeco_a, comeco_b)
+
+palavra = ""
+
+posicao_atual = novo_comeco
+
+while posicao_atual != 0
+
+  palavra += lista[posicao_atual].info
+
+  posicao_atual = lista[posicao_atual].elo
+end
+
+puts "Palavra unida: #{palavra}"
