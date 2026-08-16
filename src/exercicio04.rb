@@ -22,8 +22,6 @@ lista[6] = NoMatricial.new(60, 0)
 comeco_b = 3
 
 def intercalar_lue(lista, comeco_a, comeco_b)
-  return comeco_b if comeco_a == 0
-  return comeco_a if comeco_b == 0
 
   posicao_a = comeco_a
   posicao_b = comeco_b
