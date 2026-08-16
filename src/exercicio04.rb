@@ -36,14 +36,16 @@ def intercalar_lue(lista, comeco_a, comeco_b)
 
   atual_c = comeco_c
 
-  if lista[posicao_a].info < lista[posicao_b].info
-    lista[atual_c].elo = posicao_a
-    atual_c = posicao_a
-    posicao_a = lista[posicao_a].elo
-  else
-    lista[atual_c].elo = posicao_b
-    atual_c = posicao_b
-    posicao_b = lista[posicao_b].elo
+  while posicao_a != 0 && posicao_b != 0
+    if lista[posicao_a].info < lista[posicao_b].info
+      lista[atual_c].elo = posicao_a
+      atual_c = posicao_a
+      posicao_a = lista[posicao_a].elo
+    else
+      lista[atual_c].elo = posicao_b
+      atual_c = posicao_b
+      posicao_b = lista[posicao_b].elo
+    end
   end
 
   if posicao_a == 0
