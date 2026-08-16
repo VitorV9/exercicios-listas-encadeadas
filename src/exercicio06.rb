@@ -22,3 +22,34 @@ def inverter_lde(comeco)
 
   novo_comeco
 end
+
+gaveta_a = NoDuplo.new("A")
+gaveta_b = NoDuplo.new("B")
+gaveta_c = NoDuplo.new("C")
+
+gaveta_a.prox = gaveta_b
+gaveta_b.ant  = gaveta_a
+
+gaveta_b.prox = gaveta_c
+gaveta_c.ant  = gaveta_b
+
+comeco = gaveta_a
+
+puts "LISTA LDE ORIGINAL"
+posicao = comeco
+
+while posicao != nil
+  print "#{posicao.info} | "
+  posicao = posicao.prox
+end
+puts ""
+
+novo_comeco = inverter_lde(comeco)
+
+puts "LISTA LDE INVERTIDA"
+posicao = novo_comeco
+
+while posicao != nil
+  print "#{posicao.info} | "
+  posicao = posicao.prox
+end
