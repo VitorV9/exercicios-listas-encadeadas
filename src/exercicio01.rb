@@ -31,7 +31,4 @@ comeco_teste = 4
 
 total_nos = contar_nos(lista_teste, comeco_teste)
 
-puts "--- TESTE DO EXERCÍCIO 1 ---"
-puts "Ordem lógica esperada: P -> M -> R (3 nós)"
-puts ""
 puts "Resultado: #{total_nos} nós."
