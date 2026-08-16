@@ -10,9 +10,9 @@ end
 lista = Array.new(8)
 
 #A
-lista[2] = NoMatricial.new("N", 5)
+lista[2] = NoMatricial.new("C", 5)
 lista[5] = NoMatricial.new("I", 6)
-lista[6] = NoMatricial.new("C", 7)
+lista[6] = NoMatricial.new("N", 7)
 lista[7] = NoMatricial.new("E", 0)
 
 #B
