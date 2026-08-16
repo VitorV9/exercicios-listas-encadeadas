@@ -21,3 +21,19 @@ lista[6] = NoMatricial.new("E", 0)
 
 comeco_a = 2
 comeco_b = 3
+
+def concatenar_lue(lista, comeco_a, comeco_b)
+  if comeco_a == 0
+    comeco_b
+  end
+
+  posicao = comeco_a
+
+  while lista[posicao].elo != 0
+    posicao = lista[posicao].elo
+  end
+
+  lista[posicao].elo = comeco_b
+
+  comeco_a
+end
